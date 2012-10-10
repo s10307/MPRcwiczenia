@@ -9,17 +9,23 @@ public class Person {
 
 	private String name;
 	private List<Car> cars;
+	private String pesel;
+	
+	public Person(String name, String pesel)
+	{
+		this.pesel=pesel;
+		this.name=name;
+		this.cars=new ArrayList<Car>();
+	}
 	
 	public Person(String name) {
-	
-		this.name = name;
-		this.cars=new CarsList(this);
 		
+		this(name,"");
 	}
 	
 	public Person()
 	{
-		this("");
+		this("","");
 	}
 	
 	public String getName() {
@@ -34,6 +40,15 @@ public class Person {
 	public void setCars(List<Car> cars) {
 		this.cars = cars;
 	}
+
+	public String getPesel() {
+		return pesel;
+	}
+
+	public void setPesel(String pesel) {
+		this.pesel = pesel;
+	}
+	
 	
 	
 }
