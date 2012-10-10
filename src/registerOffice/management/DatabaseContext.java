@@ -8,8 +8,8 @@ import registerOffice.businessObjects.persons.Person;
 
 public class DatabaseContext {
 
-	static List<Person> persons=new ArrayList<Person>();
-	static List<Car> cars=new ArrayList<Car>();
+	private static List<Person> persons=new ArrayList<Person>();
+	private static List<Car> cars=new ArrayList<Car>();
 	
 	public static List<Person> getPersons() {
 		return persons;

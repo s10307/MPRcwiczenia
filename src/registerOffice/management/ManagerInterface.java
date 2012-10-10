@@ -8,7 +8,7 @@ public interface ManagerInterface<TEntity> {
 	
 	public TEntity get(/**/);
 	public List<TEntity> getAll(/**/);
-	public boolean save(/**/);
+	public boolean save(TEntity obj);
 	public boolean delete(/**/);
 	
 	/**
