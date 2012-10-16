@@ -45,7 +45,6 @@ public class PersonCar extends Car{
 
 	@Override
 	public String getCarDetails() {
-		// TODO Auto-generated method stub
 		return mark+" "+registerNumber;
 	}
 

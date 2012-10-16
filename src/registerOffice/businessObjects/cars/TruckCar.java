@@ -2,16 +2,20 @@ package registerOffice.businessObjects.cars;
 
 public class TruckCar extends Car{
 
+	private String registerNumber;
+
 	@Override
 	public String getCarDetails() {
-		// TODO Auto-generated method stub
 		return "This is a truck.";
 	}
 
 	@Override
 	public Car Clone() {
-		// TODO Auto-generated method stub
-		return null;
+		PersonCar returnValue =new PersonCar();
+		returnValue.setRegisterNumber(this.registerNumber);
+		
+		return returnValue;
+		
 	}
 }
 
